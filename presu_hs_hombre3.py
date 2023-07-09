@@ -293,7 +293,7 @@ if __name__ == "__main__":
     equipos_path = "./excels/equipos.xlsx"
 
     parcial_hs_hombre = 0
-    parcial_hs_estructura = 0
+    parcial_hs_estructura = 0 
 
     my_crew = {}
     my_equipos = {}
