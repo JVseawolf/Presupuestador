@@ -81,7 +81,7 @@ def load_equipos():
 
 def load_crew():
     datos = []
-    workbook = openpyxl.load_workbook("mandingues/excels/horas_hombre.xlsx")
+    workbook = openpyxl.load_workbook("./excels/horas_hombre.xlsx")
     sheet = workbook.active
     
     for row in sheet.iter_rows(values_only=True, min_row=2):
@@ -287,10 +287,10 @@ def ventana_presu():
     ventana.mainloop()
 
 if __name__ == "__main__":
-    hs_hombre_path = "mandingues/excels/horas_hombre.xlsx"
-    gastos_fijos_path = "mandingues/excels/gastos_fijos.xlsx"
-    main_variables_path = "mandingues/excels/main_variables.xlsx"
-    equipos_path = "mandingues/excels/equipos.xlsx"
+    hs_hombre_path = "./excels/horas_hombre.xlsx"
+    gastos_fijos_path = "./excels/gastos_fijos.xlsx"
+    main_variables_path = "./excels/main_variables.xlsx"
+    equipos_path = "./excels/equipos.xlsx"
 
     parcial_hs_hombre = 0
     parcial_hs_estructura = 0
